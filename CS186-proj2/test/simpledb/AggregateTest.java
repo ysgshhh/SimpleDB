@@ -4,26 +4,24 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import junit.framework.JUnit4TestAdapter;
-
 import org.junit.Before;
 import org.junit.Test;
-
 import simpledb.systemtest.SimpleDbTestBase;
 
 public class AggregateTest extends SimpleDbTestBase {
 
   int width1 = 2;
-  DbIterator scan1;
-  DbIterator scan2;
-  DbIterator scan3;
+  simpledb.DbIterator scan1;
+  simpledb.DbIterator scan2;
+  simpledb.DbIterator scan3;
 
-  DbIterator sum;
-  DbIterator sumstring;
+  simpledb.DbIterator sum;
+  simpledb.DbIterator sumstring;
 
-  DbIterator avg;
-  DbIterator max;
-  DbIterator min;
-  DbIterator count;
+  simpledb.DbIterator avg;
+  simpledb.DbIterator max;
+  simpledb.DbIterator min;
+  simpledb.DbIterator count;
 
   /**
    * Initialize each unit test
